@@ -7,14 +7,19 @@
 		<meta name="author" content="Egor">
 		<meta name="keywords" content="сайт визитка, разработка ...">
 		<meta name="robots" content="index, follow">
+
 		<meta property="og:title" content="Это моя первая страница...">
+
 		<title>Чирков Егор - Веб-разработчик</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		
 		<header>
 			<nav>
-				<div class="logo">Чирков Егор</div>
+				<div class="logo">Андрей Браун</div>
 				<div class="menu">
 					<ul>
 						<li>Обо мне</li>
@@ -37,18 +42,19 @@
 		</div>
 		<div class="about_me">
 			<h2>ОБО МНЕ</h2>
-			<img src="img/photo_me.png" alt="Картинка парня в разделе обо мне.">
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quibusdam a sed in fugit fugiat facilis enim necessitatibus suscipit molestiae!</p>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quibusdam a sed in fugit fugiat facilis enim necessitatibus suscipit molestiae!</p>
-			<form action="#">
-			<img src="img/download.png" alt="Иконка скачивания">
-			<input type="submit" value="Скачать резюме">
-			</form>
+			<div class="text_about_me">
+				<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quae iste id officiis itaque, dolores quo cum. At labore odio alias nulla repellat hic atque?</p>
+				<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quae iste id officiis itaque, dolores quo cum. At labore odio alias nulla repellat hic atque?</p>
+			</div>
+			<div class="download_container">
+				<img src="img/download.png" alt="Иконка скачивания.">
+				<input type="submit" value="Скачать резюме">
+			</div>
 		</div>
 		<div class="mySkills">
 			<h2>ЧТО Я УМЕЮ</h2>
 			<div class="mySkills_container">
-				<div class="skill_icon">
+				<div class="skill_item">
 					<img src="img/ноут.png" alt="Иконка ноута">
 					<h4>Веб-дизайн</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, suscipit consectetur quo recusandae eum, libero.</p>
@@ -72,11 +78,11 @@
 		</div>
 		<div class="cases">
 			<h2>КЕЙСЫ</h2>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, odio.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio a ipsum placeat animi molestias debitis.</p>
 			<img src="img/фотка_кейса.png" alt="Картинка в разделе кейсов.">
 			<div class="caseClient_container">
-				<h3>ClIENT:</h3>
-				<p>Какая-то компания</p>
+				<h3>CLIENT:</h3>
+				<p id="cases_client_text">Какая-то компания</p>
 				<h3>WEBSITE:</h3>
 				<a href="http://www.somedomain.com">http://www.somedomain.com</a>
 				<input type="submit" value="VISIT LIVE SITE">
