@@ -212,8 +212,8 @@ nav{
 }
 	
 .cases input{
-	
-	margin-left: 1px;
+	margin-top: 25px;
+	/*margin-left: 389px;*/
 	background-color: #63b5ae;
 	color: #fff;
 	height: 44px;
@@ -228,6 +228,7 @@ nav{
 }
 
 .costCalculator > h2{
+	padding-top: 207px;
 	font-size: 25px;
 	text-align: center;
 	font-weight: bold;
