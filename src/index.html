@@ -7,11 +7,8 @@
 		<meta name="author" content="Egor">
 		<meta name="keywords" content="сайт визитка, разработка ...">
 		<meta name="robots" content="index, follow">
-
 		<meta property="og:title" content="Это моя первая страница...">
-
 		<title>Чирков Егор - Веб-разработчик</title>
-
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -81,47 +78,50 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio a ipsum placeat animi molestias debitis.</p>
 			<img src="img/фотка_кейса.png" alt="Картинка в разделе кейсов.">
 			<div class="caseClient_container">
-				<h3>CLIENT:</h3>
-				<p id="cases_client_text">Какая-то компания</p>
-				<h3>WEBSITE:</h3>
+				<h3 id="cases_client">CLIENT:</h3>
+				<p>Какая-то компания</p>
+				<h3 id="cases_website">WEBSITE:</h3>
 				<a href="http://www.somedomain.com">http://www.somedomain.com</a>
-				<input type="submit" value="VISIT LIVE SITE">
 			</div>
 			<div class="caseProject_container">
 				<h3>Название проекта</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veniam laborum asperiores? Fuga nihil consectetur autem, consequuntur nesciunt adipisci. Iure beatae temporibus veniam esse asperiores, placeat, dolorem excepturi adipisci eum incidunt rerum ipsam, ipsa eaque, ipsum. Aspernatur delectus nisi voluptas!</p>
 			</div>
+			<input type="submit" value="VISIT LIVE SITE">
 		</div>
-		<form action="#">
-			<div class="costCalculator">
-				<h2>Расчет стоимости</h2>
-				<h3>ТИП САЙТА</h3>
-				<select name="list1" id="list">
-					<option value="Opt1">Option 1</option>
-					<option value="Opt2">Option 2</option>
-					<option value="Opt3">Option 3</option>
-				</select>
-				<h3>ДИЗАЙН</h3>
-				<select name="list2" id="list">
-					<option value="Opt4">Option 1</option>
-					<option value="Opt5">Option 2</option>
-					<option value="Opt6">Option 3</option>
-				</select>
-				<h3>АДАПТИВНОСТЬ</h3>
-				<select name="list3" id="list">
-					<option value="Opt7">Option 1</option>
-					<option value="Opt8">Option 2</option>
-					<option value="Opt9">Option 3</option>
-				</select>
-				<div class="costCalculator_result">
-					<h4>Сроки</h4>
-					<p>0</p>
-					<h4>Стоимость</h4>
-					<p>0</p>
+		<div class="costCalculator">
+			<h2>Расчет стоимости</h2>
+			<form action="#">
+				<div class="costCalculator_content">
+					<h3>ТИП САЙТА</h3>
+					<select name="list1" id="list">
+						<option value="Opt1">Option 1</option>
+						<option value="Opt2">Option 2</option>
+						<option value="Opt3">Option 3</option>
+					</select>
+					<h3>ДИЗАЙН</h3>
+					<select name="list2" id="list">
+						<option value="Opt4">Option 1</option>
+						<option value="Opt5">Option 2</option>
+						<option value="Opt6">Option 3</option>
+					</select>
+					<h3>АДАПТИВНОСТЬ</h3>
+					<select name="list3" id="list">
+						<option value="Opt7">Option 1</option>
+						<option value="Opt8">Option 2</option>
+						<option value="Opt9">Option 3</option>
+					</select>
+					<div class="costCalculator_result">
+						<h4>Сроки</h4>
+						<p>0</p>
+						<h4>Стоимость</h4>
+						<p>0</p>
+					</div>
 				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 		<div class="statistic">
+			<h2>НЕМНОГО СТАТИСТИКИ</h2>
 			<div class="statistic_container">
 				<div class="statistic_item">
 					<img src="img/смайл.png" alt="Иконка смайла">
@@ -146,10 +146,16 @@
 			</div>
 		</div>
 		<div class="reviews">
+			<h2>ОТЗЫВЫ</h2>
 			<div class="reviews_person">
 				<img src="img/фотка_Михаила.png" alt="Картинка персоны">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum a suscipit quaerat facilis totam ipsa autem voluptatem tempora laboriosam.</p>
-				<p>Михаил, Ген директор ПАО “Газпром”.</p>
+				<p><span>Михаил</span>, Ген директор ПАО “Газпром”.</p>
+			</div>
+			<div class="reviews_button">
+				<input type="radio" name="input_reviews_person">
+				<input type="radio" name="input_reviews_person">
+				<input type="radio" name="input_reviews_person">
 			</div>
 		</div>
 	</body>
@@ -160,7 +166,7 @@
 			<div class="contacts_container">
 				<div class="contacts_item">
 					<img src="img/гео.png" alt="Иконка гео-локации">
-					<p>Томск, Кузнецова 6</p>
+					<p>Томск<br>Кузнецова 6</p>
 				</div>
 				<div class="contacts_item">
 					<img src="img/конверт.png" alt="Иконка конверта">
@@ -170,15 +176,17 @@
 					<img src="img/труба.png" alt="Иконка трубки телефона">
 					<p>+7 999 999-99-99</p>
 				</div>
+				<div class="clearfix"></div>
 			</div>
 			<h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
 			<form action="#">
-				<input type="text" name="input_name" placeholder="Имя">
-				<input type="text" name="input_email" placeholder="Email">
-				<textarea name="input_text" id="1" cols="30" rows="10">
-
+				<input type="text" name="input_name" id="contacts_input_name" placeholder="Имя">
+				<input type="text" name="input_email" id="contacts_input_email" placeholder="Email">
+				<div class="clearfix"></div>
+				<textarea name="input_text" id="1" cols="105" rows="5">Сообщение
 				</textarea>
-				<input type="submit" value="Отправить">
+				<div class="clearfix"></div>
+				<input type="submit" id="contacts_input_submit" value="Отправить">
 			</form>
 			<div class="icons_container">
 				<div class="icons_item">
@@ -205,7 +213,7 @@
 			
 		</div>
 		<div class="ending">
-			Copyright © 2021 Чирков Егор. Design by Web
+			<p>Copyright © 2021 Чирков Егор. Design by Web</p>
 		</div>
 	</footer>
 </html>
