@@ -1,0 +1,77 @@
+body{
+	padding: 50px;
+}
+
+.box span{
+	text-align: center;
+	display: block;
+	margin-top: 90px;
+}
+
+.box{
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	background-color: azure;
+
+	/*
+	transition-duration: 1.5s;
+	transition-property: width, background-color;
+	transition-delay: 0.1s;
+
+	transition-timing-function: ease;
+	transition-timing-function: cubic-bezier(.04, 1.13, .9, -0.39);
+
+	transition: all 1.5s 0.1s cubic-bezier(.04, 1.13, .9, -0.39);
+	*/
+
+	/*
+	animation-name: move;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
+	animation-delay: 0.2s;
+
+	animation-iteration-count: 3;
+	animation-direction: alternate-reverse;
+	
+	animation-fill-mode: forwards;
+	*/
+
+	animation: move 1.5s linear alternate infinite, bg-color 2s;
+}
+
+/*
+.box:active{
+	background-color: red;
+	width: 300px;
+	opacity: 0;
+
+	margin-left: 300px;
+}
+*/
+
+@keyframes move{
+	0%{
+		margin-left: 0;
+	}
+
+
+	100%{
+		margin-left: 200px;
+	}
+}
+
+@keyframes bg-color{
+	0%{
+		background: red;
+	}
+
+
+	100%{
+		background: white;
+	}
+}
+
+.box:hover{
+	animation-play-state: paused;
+}

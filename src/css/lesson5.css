@@ -1,0 +1,60 @@
+body{
+	padding: 50px;
+	font-family: Arial, sans-serif;
+}
+
+.main_block{
+	border: 2px solid red;
+	max-width: 800px;
+	height: 1800px;
+	margin: 0 auto;
+}
+
+.main_block div{
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	width: 33%;
+}
+
+.block_1{
+	background-color: antiquewhite;
+	float: left;
+}
+
+.block_2{
+	background-color: coral;
+	/*
+	position: relative;
+	top: 10px;
+	left: 10px;
+	
+	z-index: 101;
+	
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+
+	position: sticky;
+	top: 0;
+	left: 0;
+	*/
+	float: left;
+}
+
+.block_3{
+	background-color: lightgreen;
+	/*
+	z-index: 102;
+	*/
+	float: left;
+}

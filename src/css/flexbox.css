@@ -1,0 +1,50 @@
+.block{
+	margin: 250px;
+	width: 1400px;
+	height: 300px;
+	background-color: aliceblue;
+}
+
+.row{
+	background-color: darkcyan;
+
+	/*
+	height: 500px;
+	*/
+
+	padding: 10px;
+	display: flex;
+
+	flex-direction: column;
+}
+
+.col{
+	background-color: chocolate;
+	padding: 5px;
+	font-size: 20px;
+	line-height: 200px;
+	border: 1px solid black;
+	text-align: center;
+
+	/*
+	flex-basis: 300px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	
+	flex: 1 1 300px;
+	*/
+}
+
+/*
+.col2{
+	order: 3; 
+}
+
+.col1{
+	order: 2; 
+}
+
+.col3{
+	order: 1; 
+}
+*/

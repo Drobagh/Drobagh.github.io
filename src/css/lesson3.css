@@ -1,0 +1,123 @@
+div{
+	font-size: 20px;
+}
+span{
+	color: rgb(255, 0, 0);
+}
+.text{
+	color: orange;	
+}
+[custom_data=""]{
+	color: blue;
+}
+span.text{
+	color: greenyellow;
+}
+#text_span{
+	color: yellow;
+}
+.block p{
+	font-size: 30px;
+}
+.block>p{
+	font-size: 10px;
+}
+
+
+
+p{
+	font-family: Arial, "Heveltica Neue", Helvetica, sans-serif;
+	font-size: 25px;
+
+	/*
+	font-style: italic;
+	font-weight: 400;
+	color: #eee;
+	*/
+
+	text-align: justify;
+	text-decoration: none;
+
+	/*
+	text-shadow: 1px 10px 10px #000;
+	*/
+
+	text-transform: lowercase;
+
+	/*
+	text-indent: 50px;
+	*/
+
+	letter-spacing: 0,3px;
+
+	/*
+	line-height: 50px;
+	*/
+
+	white-space: normal;
+	word-spacing: 10px;
+}
+
+/*Стили для блочных элементов*/
+.block{
+	margin: 10px;
+	padding: 20px 40px 5px 10px;
+
+	/*
+	padding: 1%;
+	*/
+
+	/*
+	width: 600px;
+	height: 600px;
+	*/
+
+	/*
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+
+	borde-right: 2px solid #000;
+	*/
+
+	outline: 1px solid #000;
+
+	/*
+	max-width: 300px;
+	min-height: 100px;
+	max-height: 100px;
+	overflow: scroll;
+	*/
+	
+	box-sizing: border-box;
+
+	/*
+	box-shadow: 1px 2px 5px #000 inset;
+	*/
+
+	/*
+	opacity: 0.1;
+	*/
+
+	visibility: hidden;
+}
+
+/*Стили для строчных элементов*/
+.example-string{
+	/*
+	margin: 100px;
+	border: 1px solid #000;
+	*/
+
+	/*
+	display: inline-block;
+	display: none;
+
+	border: 1px solid #000;
+	margin: 10px;
+	width: 300px;
+	*/
+	
+}
