@@ -1,54 +1,66 @@
-	<!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="description" content="Это моя первая страница...">
-			<meta name="author" content="Egor">
-			<meta name="keywords" content="сайт визитка, разработка ...">
-			<meta name="robots" content="index, follow">
-			<meta property="og:title" content="Это моя первая страница...">
-			<title>Чирков Егор - Веб-разработчик</title>
-			<link rel="stylesheet" href="css/reset.css">
-			<link rel="stylesheet" href="css/style.css">
-		</head>
-		<body>
-			
-			<header>
-				<nav>
-					<div class="logo">Андрей Браун</div>
-					<div class="menu">
-						<ul>
-							<li>Обо мне</li>
-							<li>Услуги</li>
-							<li>Кейсы</li>
-							<li>Прайс</li>
-							<li>Отзывы</li>
-							<li>Контакты</li>
-						</ul>
-					</div>
-				</nav>
-			</header>
-			<div class="main">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Это моя первая страница...">
+		<meta name="author" content="Egor">
+		<meta name="keywords" content="сайт визитка, разработка ...">
+		<meta name="robots" content="index, follow">
+		<meta property="og:title" content="Это моя первая страница...">
+		<title>Чирков Егор - Веб-разработчик</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/my-fonts.css">
+	</head>
+	<body>
+		<div class="preloader">
+			<div class="preloader__row">
+				<div class="preloader__item"></div>
+				<div class="preloader__item"></div>
+				<div class="preloader__item"></div>
+				<div class="preloader__item"></div>
+			</div>
+		</div>
+		<header>
+			<nav>
+				<div class="logo">Чирков Егор</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Обо мне</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Кейсы</a></li>
+						<li><a href="#">Прайс</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="main">
 				<div class="title_container">
 					<h1>Привет <br>Я Чирков Егор</h1>
-					<h4>Фулл стек веб-разработчик</h4>
-					<input type="submit" value="Обо мне">
-					<input type="submit" value="Мои работы">
+					<h4><i class="icon-unicorn-custom" aria-hidden="true"></i>Фулл стек веб-разработчик</h4>
+					<input type="button" value="Обо мне">
+					<input type="button" value="Мои работы">
 				</div>
-			</div>
-			<div class="about_me">
+			</section>
+			<section class="about_me">
 				<h2>ОБО МНЕ</h2>
 				<div class="text_about_me">
 					<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quae iste id officiis itaque, dolores quo cum. At labore odio alias nulla repellat hic atque?</p>
 					<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quae iste id officiis itaque, dolores quo cum. At labore odio alias nulla repellat hic atque?</p>
 				</div>
 				<div class="download_container">
-					<img src="img/download.png" alt="Иконка скачивания.">
-					<input type="submit" value="Скачать резюме">
+					<div class="download_container_img">
+						<img src="img/download.png" alt="Иконка скачивания.">
+					</div>
+					<input type="button" value="Скачать резюме">
 				</div>
-			</div>
-			<div class="mySkills">
+			</section>
+			<section class="mySkills">
 				<h2>ЧТО Я УМЕЮ</h2>
 				<div class="mySkills_container">
 					<div class="skill_item">
@@ -72,11 +84,11 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, suscipit consectetur quo recusandae eum, libero.</p>
 					</div>
 				</div>
-			</div>
-			<div class="cases">
+			</section>
+			<section class="cases">
 				<h2>КЕЙСЫ</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio a ipsum placeat animi molestias debitis.</p>
-				<img src="img/caseExample.jpg" alt="Картинка в разделе кейсов.">
+				<img src="img/caseExample.png" alt="Картинка в разделе кейсов.">
 				<div class="caseClient_container">
 					<h3 id="cases_client">CLIENT:</h3>
 					<p>Какая-то компания</p>
@@ -87,11 +99,11 @@
 					<h3>Название проекта</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veniam laborum asperiores? Fuga nihil consectetur autem, consequuntur nesciunt adipisci. Iure beatae temporibus veniam esse asperiores, placeat, dolorem excepturi adipisci eum incidunt rerum ipsam, ipsa eaque, ipsum. Aspernatur delectus nisi voluptas!</p>
 				</div>
-				<div class="case_submit">
-					<input type="submit" value="VISIT LIVE SITE">
+				<div class="case_button">
+					<input type="button" value="VISIT LIVE SITE">
 				</div>
-			</div>
-			<div class="costCalculator">
+			</section>
+			<section class="costCalculator">
 				<h2>Расчет стоимости</h2>
 				<form action="#">
 					<div class="costCalculator_content">
@@ -121,9 +133,10 @@
 						</div>
 					</div>
 				</form>
-			</div>
-			<div class="statistic">
+			</section>
+			<section class="statistic">
 				<h2>НЕМНОГО СТАТИСТИКИ</h2>
+				<img src="img/titleBar.png" alt="">
 				<div class="statistic_container">
 					<div class="statistic_item">
 						<img src="img/смайл.png" alt="Иконка смайла">
@@ -146,8 +159,8 @@
 						<h4>НАГРАД ПОЛУЧЕНО</h4>
 					</div>
 				</div>
-			</div>
-			<div class="reviews">
+			</section>
+			<section class="reviews">
 				<h2>ОТЗЫВЫ</h2>
 				<div class="reviews_person">
 					<img src="img/фотка_Михаила.png" alt="Картинка персоны">
@@ -159,63 +172,75 @@
 					<input type="radio" name="input_reviews_person">
 					<input type="radio" name="input_reviews_person">
 				</div>
-			</div>
-		</body>
-		<footer>
-			<div class="contacts">
-				<h2>МОИ КОНТАКТЫ</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quis.</p>
-				<div class="contacts_container">
-					<div class="contacts_item">
-						<img src="img/гео.png" alt="Иконка гео-локации">
-						<p>Томск<br>Кузнецова 6</p>
-					</div>
-					<div class="contacts_item">
-						<img src="img/конверт.png" alt="Иконка конверта">
-						<p>info@companyname.com</p>
-					</div>
-					<div class="contacts_item">
-						<img src="img/труба.png" alt="Иконка трубки телефона">
-						<p>+7 999 999-99-99</p>
-					</div>
-					<div class="clearfix"></div>
+			</section>
+		</main>
+
+		<script>
+		    window.onload = function () {
+		      document.body.classList.add('loaded_hiding');
+		      window.setTimeout(function () {
+		        document.body.classList.add('loaded');
+		        document.body.classList.remove('loaded_hiding');
+		      }, 500);
+		    }
+	  	</script>
+
+	</body>
+	<footer>
+		<section class="contacts">
+			<h2>МОИ КОНТАКТЫ</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quis.</p>
+			<div class="contacts_container">
+				<div class="contacts_item">
+					<img src="img/гео.png" alt="Иконка гео-локации">
+					<p>Томск<br>Кузнецова 6</p>
 				</div>
-				<h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-				<form action="#">
-					<input type="text" name="input_name" id="contacts_input_name" placeholder="Имя">
-					<input type="text" name="input_email" id="contacts_input_email" placeholder="Email">
-					<div class="clearfix"></div>
-					<textarea name="input_text" id="1" cols="105" rows="5">Сообщение
-					</textarea>
-					<div class="clearfix"></div>
-					<input type="submit" id="contacts_input_submit" value="Отправить">
-				</form>
-				<div class="icons_container">
-					<div class="icons_item">
-						<img src="img/фб.png" alt="Иконка Facebook">
-					</div>
-					<div class="icons_item">
-						<img src="img/твитер.png" alt="Иконка Twitter">
-					</div>
-					<div class="icons_item">
-						<img src="img/мяч.png" alt="Иконка Dribbble">
-					</div>
-					<div class="icons_item">
-						<img src="img/киса.png" alt="Иконка GitHub">
-					</div>
-					<div class="icons_item">
-						<img src="img/инст.png" alt="Иконка Instagram">
-					</div>
-					<div class="icons_item">
-						<img src="img/ин.png" alt="Иконка LinkedIn">
-					</div>
+				<div class="contacts_item">
+					<img src="img/конверт.png" alt="Иконка конверта">
+					<p>info@companyname.com</p>
+				</div>
+				<div class="contacts_item">
+					<img src="img/труба.png" alt="Иконка трубки телефона">
+					<p>+7 999 999-99-99</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+			<form action="#">
+				<input type="text" name="input_name" id="contacts_input_name" placeholder="Имя">
+				<input type="text" name="input_email" id="contacts_input_email" placeholder="Email">
+				<div class="clearfix"></div>
+				<textarea name="input_text" id="1" cols="100" rows="6">Сообщение
+				</textarea>
+				<div class="clearfix"></div>
+				<input type="submit" id="contacts_input_submit" value="Отправить">
+			</form>
+			<div class="icons_container">
+				<div class="icons_item">
+					<img src="img/фб.png" alt="Иконка Facebook">
+				</div>
+				<div class="icons_item">
+					<img src="img/твитер.png" alt="Иконка Twitter">
+				</div>
+				<div class="icons_item">
+					<img src="img/мяч.png" alt="Иконка Dribbble">
+				</div>
+				<div class="icons_item">
+					<img src="img/киса.png" alt="Иконка GitHub">
+				</div>
+				<div class="icons_item">
+					<img src="img/инст.png" alt="Иконка Instagram">
+				</div>
+				<div class="icons_item">
+					<img src="img/ин.png" alt="Иконка LinkedIn">
 				</div>
 			</div>
-			<div class="map">
-				
-			</div>
-			<div class="ending">
-				<p>Copyright © 2021 Чирков Егор. Design by Web</p>
-			</div>
-		</footer>
-	</html>
+		</section>
+		<section class="map">
+			
+		</section>
+		<section class="ending">
+			<p>Copyright © 2021 Чирков Егор. Design by Web</p>
+		</section>
+	</footer>
+</html>
